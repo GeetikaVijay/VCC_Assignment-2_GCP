@@ -1,0 +1,29 @@
+Command to create databse and table to insert data : 
+--------------------------------------------------------------------------
+
+CREATE DATABASE EMPLOYEES; 
+
+CREATE TABLE employees (
+    employee_id VARCHAR(50) PRIMARY KEY,
+    employee_name VARCHAR(100) NOT NULL,
+    employee_company VARCHAR(100) NOT NULL,
+    employee_email VARCHAR(100) NOT NULL
+		) ;
+
+
+INSERT INTO employees ( employee_id, employee_name, employee_company, employee_email )
+VALUES ( '123' , ' Geetika Vijay', 'IBM', ' geetika.vijay@ibm.com' ) ;
+
+
+INSERT INTO employees ( employee_id, employee_name, employee_company, employee_email )
+VALUES ( '124' , ' Grishma Vijay', 'EBAY', ' geetika.vijay@ebay.com' ) ;
+
+
+VM2 Database Server IP : 34.122.183.176
+
+
+# Commands to restart MYSQL server installed on virtual machine - 2
+--------------------------------------------------------------------------
+sudo service mysql start;
+sudo service mysql restart;
+sudo systemctl restart mysqld;
